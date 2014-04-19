@@ -1,0 +1,112 @@
+mbbs_iomrv2.lo .libs/mbbs_iomrv2.o: mbbs_iomrv2.c /usr/include/stdio.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h mbbs_defines.h /usr/include/time.h \
+  /usr/include/_structs.h /usr/include/sys/_structs.h \
+  ../../src/mbio/mb_config.h /usr/include/rpc/rpc.h \
+  /usr/include/rpc/types.h /usr/include/sys/types.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/types.h \
+  /usr/include/i386/types.h /usr/include/i386/_types.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/sys/time.h \
+  /usr/include/sys/_select.h /usr/include/netinet/in.h \
+  /usr/include/stdint.h /usr/include/sys/socket.h \
+  /usr/include/machine/_param.h /usr/include/i386/_param.h \
+  /usr/include/netinet6/in6.h /usr/include/rpc/xdr.h \
+  /usr/include/rpc/auth.h /usr/include/rpc/clnt.h \
+  /usr/include/rpc/rpc_msg.h /usr/include/rpc/auth_unix.h \
+  /usr/include/rpc/svc.h /usr/include/rpc/svc_auth.h /usr/include/netdb.h
+
+/usr/include/stdio.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/sys/_symbol_aliasing.h:
+
+/usr/include/sys/_posix_availability.h:
+
+/usr/include/Availability.h:
+
+/usr/include/AvailabilityInternal.h:
+
+/usr/include/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/secure/_stdio.h:
+
+/usr/include/secure/_common.h:
+
+mbbs_defines.h:
+
+/usr/include/time.h:
+
+/usr/include/_structs.h:
+
+/usr/include/sys/_structs.h:
+
+../../src/mbio/mb_config.h:
+
+/usr/include/rpc/rpc.h:
+
+/usr/include/rpc/types.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/appleapiopts.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/i386/types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/machine/endian.h:
+
+/usr/include/i386/endian.h:
+
+/usr/include/sys/_endian.h:
+
+/usr/include/libkern/_OSByteOrder.h:
+
+/usr/include/libkern/i386/_OSByteOrder.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/sys/_select.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/stdint.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/machine/_param.h:
+
+/usr/include/i386/_param.h:
+
+/usr/include/netinet6/in6.h:
+
+/usr/include/rpc/xdr.h:
+
+/usr/include/rpc/auth.h:
+
+/usr/include/rpc/clnt.h:
+
+/usr/include/rpc/rpc_msg.h:
+
+/usr/include/rpc/auth_unix.h:
+
+/usr/include/rpc/svc.h:
+
+/usr/include/rpc/svc_auth.h:
+
+/usr/include/netdb.h:

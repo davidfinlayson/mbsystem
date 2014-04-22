@@ -1,5 +1,6 @@
 *~
 *_bak
+*.orig
 *.Po
 *.a
 *.app

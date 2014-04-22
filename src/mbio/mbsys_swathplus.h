@@ -231,7 +231,7 @@ typedef struct swpls_point_struct
 	unsigned short int amp;		/* raw amplitude (16-bit) */
 	unsigned short int procamp;	/* processed amplitude (16-bit) */
 	unsigned char status;		/* 0 (bad) or 1 (good) */
-	double tpu;				/* total propagated uncertainty (m) [Version 2]*/
+	double tpu;					/* total propagated uncertainty (m) [Version 2]*/
 	} swpls_point;
 
 /* SWATHplus processed ping data (SXP)*/
@@ -246,14 +246,14 @@ typedef struct swpls_sxpping_struct
 	double northing;			/* northing coordinate of transducer (m) */
 	double roll;				/* roll at start of ping (deg) +starboard down*/
 	double pitch;				/* pitch at start of ping (deg)  +nose up */
-	double heading;			/* heading at start of ping (deg), +clockwise */
+	double heading;				/* heading at start of ping (deg), +clockwise */
 	double height;				/* height of crp in survey datum (m) +down */
 	double tide;				/* tide at start of ping (m) */
-	double sos;				/* speed of sound (mean value) */
+	double sos;					/* speed of sound (mean value) */
 	unsigned char txno;			/* transducer identifier */
 	unsigned char txstat;		/* transducer status */
 	unsigned char txpower;		/* power setting */
-	short int analoggain;			/* analog gain setting */
+	short int analoggain;		/* analog gain setting */
 	unsigned char nostaves;		/* number of staves on transducer */
 	unsigned char txinfo[SWPLS_MAX_TX_INFO];	/* board type/revision/serial num. */
 	unsigned char freq;			/* frequency code */

@@ -577,7 +577,7 @@ static void error_exit(int verbose, int error, char *funcname, char *message)
 static int process_output(int verbose, mbdefaults *mbdflts, options *opts,
 	mb_path ifile, counts *recs, int *error)
 {
-	char *function_name = "scan_input_heights";
+	char *function_name = "process_output";
 	int status = MB_SUCCESS;
 	int i;
 	void *imbio_ptr = NULL;

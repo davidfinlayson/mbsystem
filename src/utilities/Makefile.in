@@ -95,7 +95,7 @@ bin_PROGRAMS = mbhsdump$(EXEEXT) mbformat$(EXEEXT) mbdefaults$(EXEEXT) \
 	mbfilter$(EXEEXT) mbroutetime$(EXEEXT) \
 	mbhysweeppreprocess$(EXEEXT) mbkongsbergpreprocess$(EXEEXT) \
 	mbswplspreprocess$(EXEEXT) mbpreprocess$(EXEEXT) \
-	mbsvpselect$(EXEEXT) $(am__EXEEXT_1)
+	mbsvpselect$(EXEEXT) mbampstats$(EXEEXT) $(am__EXEEXT_1)
 @BUILD_GSF_TRUE@am__append_1 = -I${top_srcdir}/src/gsf
 subdir = src/utilities
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
@@ -130,6 +130,9 @@ mb7kpreprocess_DEPENDENCIES = ${top_builddir}/src/mbaux/libmbaux.la
 am_mbabsorption_OBJECTS = mbabsorption.$(OBJEXT)
 mbabsorption_OBJECTS = $(am_mbabsorption_OBJECTS)
 mbabsorption_LDADD = $(LDADD)
+am_mbampstats_OBJECTS = mbampstats.$(OBJEXT)
+mbampstats_OBJECTS = $(am_mbampstats_OBJECTS)
+mbampstats_DEPENDENCIES = ${top_builddir}/src/mbaux/libmbaux.la
 am_mbareaclean_OBJECTS = mbareaclean.$(OBJEXT)
 mbareaclean_OBJECTS = $(am_mbareaclean_OBJECTS)
 mbareaclean_LDADD = $(LDADD)
@@ -305,13 +308,14 @@ am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
 SOURCES = $(mb7k2jstar_SOURCES) $(mb7k2ss_SOURCES) \
 	$(mb7kpreprocess_SOURCES) $(mbabsorption_SOURCES) \
-	$(mbareaclean_SOURCES) $(mbauvloglist_SOURCES) \
-	$(mbauvnavusbl_SOURCES) $(mbbackangle_SOURCES) \
-	$(mbclean_SOURCES) $(mbcopy_SOURCES) $(mbctdlist_SOURCES) \
-	$(mbdatalist_SOURCES) $(mbdefaults_SOURCES) \
-	$(mbdumpesf_SOURCES) $(mbextractsegy_SOURCES) \
-	$(mbfilter_SOURCES) $(mbformat_SOURCES) $(mbgetesf_SOURCES) \
-	$(mbgrid_SOURCES) $(mbhistogram_SOURCES) $(mbhsdump_SOURCES) \
+	$(mbampstats_SOURCES) $(mbareaclean_SOURCES) \
+	$(mbauvloglist_SOURCES) $(mbauvnavusbl_SOURCES) \
+	$(mbbackangle_SOURCES) $(mbclean_SOURCES) $(mbcopy_SOURCES) \
+	$(mbctdlist_SOURCES) $(mbdatalist_SOURCES) \
+	$(mbdefaults_SOURCES) $(mbdumpesf_SOURCES) \
+	$(mbextractsegy_SOURCES) $(mbfilter_SOURCES) \
+	$(mbformat_SOURCES) $(mbgetesf_SOURCES) $(mbgrid_SOURCES) \
+	$(mbhistogram_SOURCES) $(mbhsdump_SOURCES) \
 	$(mbhysweeppreprocess_SOURCES) $(mbinfo_SOURCES) \
 	$(mbkongsbergpreprocess_SOURCES) $(mblevitus_SOURCES) \
 	$(mblist_SOURCES) $(mbmosaic_SOURCES) $(mbnavlist_SOURCES) \
@@ -325,13 +329,14 @@ SOURCES = $(mb7k2jstar_SOURCES) $(mb7k2ss_SOURCES) \
 	$(mbswplspreprocess_SOURCES) $(mbtime_SOURCES)
 DIST_SOURCES = $(mb7k2jstar_SOURCES) $(mb7k2ss_SOURCES) \
 	$(mb7kpreprocess_SOURCES) $(mbabsorption_SOURCES) \
-	$(mbareaclean_SOURCES) $(mbauvloglist_SOURCES) \
-	$(mbauvnavusbl_SOURCES) $(mbbackangle_SOURCES) \
-	$(mbclean_SOURCES) $(mbcopy_SOURCES) $(mbctdlist_SOURCES) \
-	$(mbdatalist_SOURCES) $(mbdefaults_SOURCES) \
-	$(mbdumpesf_SOURCES) $(mbextractsegy_SOURCES) \
-	$(mbfilter_SOURCES) $(mbformat_SOURCES) $(mbgetesf_SOURCES) \
-	$(mbgrid_SOURCES) $(mbhistogram_SOURCES) $(mbhsdump_SOURCES) \
+	$(mbampstats_SOURCES) $(mbareaclean_SOURCES) \
+	$(mbauvloglist_SOURCES) $(mbauvnavusbl_SOURCES) \
+	$(mbbackangle_SOURCES) $(mbclean_SOURCES) $(mbcopy_SOURCES) \
+	$(mbctdlist_SOURCES) $(mbdatalist_SOURCES) \
+	$(mbdefaults_SOURCES) $(mbdumpesf_SOURCES) \
+	$(mbextractsegy_SOURCES) $(mbfilter_SOURCES) \
+	$(mbformat_SOURCES) $(mbgetesf_SOURCES) $(mbgrid_SOURCES) \
+	$(mbhistogram_SOURCES) $(mbhsdump_SOURCES) \
 	$(mbhysweeppreprocess_SOURCES) $(mbinfo_SOURCES) \
 	$(mbkongsbergpreprocess_SOURCES) $(mblevitus_SOURCES) \
 	$(mblist_SOURCES) $(mbmosaic_SOURCES) $(mbnavlist_SOURCES) \
@@ -614,6 +619,8 @@ mbkongsbergpreprocess_SOURCES = mbkongsbergpreprocess.c
 mbkongsbergpreprocess_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
 mbswplspreprocess_SOURCES = mbswplspreprocess.c
 mbswplspreprocess_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
+mbampstats_SOURCES = mbampstats.c
+mbampstats_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
 mbpreprocess_SOURCES = mbpreprocess.c
 mbpreprocess_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
 mbsvpselect_SOURCES = mbsvpselect.c geodesic.c
@@ -725,6 +732,10 @@ mb7kpreprocess$(EXEEXT): $(mb7kpreprocess_OBJECTS) $(mb7kpreprocess_DEPENDENCIES
 mbabsorption$(EXEEXT): $(mbabsorption_OBJECTS) $(mbabsorption_DEPENDENCIES) $(EXTRA_mbabsorption_DEPENDENCIES) 
 	@rm -f mbabsorption$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(mbabsorption_OBJECTS) $(mbabsorption_LDADD) $(LIBS)
+
+mbampstats$(EXEEXT): $(mbampstats_OBJECTS) $(mbampstats_DEPENDENCIES) $(EXTRA_mbampstats_DEPENDENCIES) 
+	@rm -f mbampstats$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(mbampstats_OBJECTS) $(mbampstats_LDADD) $(LIBS)
 
 mbareaclean$(EXEEXT): $(mbareaclean_OBJECTS) $(mbareaclean_DEPENDENCIES) $(EXTRA_mbareaclean_DEPENDENCIES) 
 	@rm -f mbareaclean$(EXEEXT)
@@ -905,6 +916,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mb7k2ss.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mb7kpreprocess.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mbabsorption.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mbampstats.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mbareaclean.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mbauvloglist.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mbauvnavusbl.Po@am__quote@

@@ -1,3 +1,34 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Libraries
+*/.libs/*
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+*.la
+*.lai
+*.Po
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+# Executables
+# Libraries
+# Object files
+# Shared objects (inc. Windows DLLs)
 *.Po
 *.a
 *.app

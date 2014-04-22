@@ -1,0 +1,110 @@
+MB System Guide File
+
+Function Prototype:
+
+/* set/reset an mb_matrix back to the identity matrix
+ *
+ * m - transformation matrix to reset
+ */
+static int set_identity(int verbose, mb_matrix *m, int *error)
+{
+	char *function_name = "set_identity";
+	int status = MB_SUCCESS;
+
+	*error = MB_ERROR_NO_ERROR;
+
+	if (verbose >= 2)
+		{
+		fprintf(stderr, "\ndbg2  MBIO function <%s> called.\n", function_name);
+		fprintf(stderr, "dbg2  Revision id: %s\n", rcs_id);
+		fprintf(stderr, "dbg2  Input arguments:\n");
+		fprintf(stderr, "dbg2       verbose:      %d\n", verbose);
+		fprintf(stderr, "dbg2       m:            %p\n", (void *)m);
+		}
+
+	/* do stuff */
+
+	if (verbose >= 2)
+		{
+		fprintf(stderr, "\ndbg2  MBIO function <%s> completed\n",
+			function_name);
+		fprintf(stderr, "dbg2  Return values:\n");
+		fprintf(stderr, "dbg2       error:      %d\n", *error);
+		fprintf(stderr, "dbg2  Return status:\n");
+		fprintf(stderr, "dbg2       status:     %d\n", status);
+		}
+
+	return (status);
+} /* set_identity */
+
+
+COORDINATE SYSTEMS:
+
+SWATHplus Coordinate system
+--------------------------------------
+
+heading +nose right (clockwise looking down)
+roll +starboard down
+pitch +nose up
+
+
+SWPLS Matrix functions
+-----------------------------
+
+x = +right
+y = +up
+z = +forward
+
+x rotate (pitch)  +nose down
+y rotate (heading) + nose right
+z rotate (roll) + starboard up
+
+MB System Coordinate System
+--------------------------------------
+
+heading +starboard
+pitch +nose up
+roll +starboard down
+
+
+
+In SXP to go from intertial -> Body Remove attitude in this order:
+
+1. remove heading
+2. remove pitch
+3. remove roll
+
+In SXP to go from body to inertial apply in order:
+
+1. apply roll
+2. apply pitch
+3. apply heading
+
+GDB Example:
+
+> gdb mbinfo
+(gdb) b mb_proj_init
+(gdb) r -i 140_0959.HSX
+(gdb) bt
+#0  mb_proj_init (..., projection=0x7fffffffb600 "UTM20N", ...) at
+mb_proj.c:83
+#1  ... in mb_read_init (...) at mb_read_init.c:891
+#2  ... in main (...) at mbinfo.c:813
+(gdb) c
+(gdb) bt
+#0  mb_proj_init (..., projection=0x6366a0 "UTM01N",...) at mb_proj.c:83
+#1  ... in mbr_hysweep1_rd_data (...) at mbr_hysweep1.c:2272
+#2  ... in mbr_rt_hysweep1 (...) at mbr_hysweep1.c:432
+#3  ... in mb_read_ping (...)
+    at mb_read_ping.c:181
+#4  ... in mb_read (...) at mb_read.c:249
+#5  ... in main (...) at mbinfo.c:1069
+(gdb) up
+#1  ... in mbr_hysweep1_rd_data (...) at mbr_hysweep1.c:2272
+(gdb) list
+2268    if (strlen(store->PRJ_proj4_command) == 0)
+2269            {
+2270            strcpy(store->PRJ_proj4_command, "UTM01N");
+2271            }
+2272    mb_proj_init(verbose, store->PRJ_proj4_command,
+&(mb_io_ptr->pjptr), error);

@@ -46,8 +46,7 @@ bin_PROGRAMS = mbhsdump \
         mbkongsbergpreprocess \
         mbswplspreprocess \
         mbpreprocess \
-		mbsvpselect \
-		mbampstats \
+	mbsvpselect \
         $(FFTW_PROG)
 
 include_HEADERS = levitus.h
@@ -171,9 +170,6 @@ mbkongsbergpreprocess_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
 
 mbswplspreprocess_SOURCES = mbswplspreprocess.c
 mbswplspreprocess_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
-
-mbampstats_SOURCES = mbampstats.c
-mbampstats_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
 
 mbpreprocess_SOURCES = mbpreprocess.c
 mbpreprocess_LDADD = ${top_builddir}/src/mbaux/libmbaux.la

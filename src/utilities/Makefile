@@ -95,7 +95,7 @@ bin_PROGRAMS = mbhsdump$(EXEEXT) mbformat$(EXEEXT) mbdefaults$(EXEEXT) \
 	mbfilter$(EXEEXT) mbroutetime$(EXEEXT) \
 	mbhysweeppreprocess$(EXEEXT) mbkongsbergpreprocess$(EXEEXT) \
 	mbswplspreprocess$(EXEEXT) mbpreprocess$(EXEEXT) \
-	mbsvpselect$(EXEEXT) $(am__EXEEXT_1)
+	mbsvpselect$(EXEEXT) mbampstats$(EXEEXT) $(am__EXEEXT_1)
 am__append_1 = -I${top_srcdir}/src/gsf
 subdir = src/utilities
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
@@ -130,6 +130,9 @@ mb7kpreprocess_DEPENDENCIES = ${top_builddir}/src/mbaux/libmbaux.la
 am_mbabsorption_OBJECTS = mbabsorption.$(OBJEXT)
 mbabsorption_OBJECTS = $(am_mbabsorption_OBJECTS)
 mbabsorption_LDADD = $(LDADD)
+am_mbampstats_OBJECTS = mbampstats.$(OBJEXT)
+mbampstats_OBJECTS = $(am_mbampstats_OBJECTS)
+mbampstats_DEPENDENCIES = ${top_builddir}/src/mbaux/libmbaux.la
 am_mbareaclean_OBJECTS = mbareaclean.$(OBJEXT)
 mbareaclean_OBJECTS = $(am_mbareaclean_OBJECTS)
 mbareaclean_LDADD = $(LDADD)
@@ -305,13 +308,14 @@ am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
 SOURCES = $(mb7k2jstar_SOURCES) $(mb7k2ss_SOURCES) \
 	$(mb7kpreprocess_SOURCES) $(mbabsorption_SOURCES) \
-	$(mbareaclean_SOURCES) $(mbauvloglist_SOURCES) \
-	$(mbauvnavusbl_SOURCES) $(mbbackangle_SOURCES) \
-	$(mbclean_SOURCES) $(mbcopy_SOURCES) $(mbctdlist_SOURCES) \
-	$(mbdatalist_SOURCES) $(mbdefaults_SOURCES) \
-	$(mbdumpesf_SOURCES) $(mbextractsegy_SOURCES) \
-	$(mbfilter_SOURCES) $(mbformat_SOURCES) $(mbgetesf_SOURCES) \
-	$(mbgrid_SOURCES) $(mbhistogram_SOURCES) $(mbhsdump_SOURCES) \
+	$(mbampstats_SOURCES) $(mbareaclean_SOURCES) \
+	$(mbauvloglist_SOURCES) $(mbauvnavusbl_SOURCES) \
+	$(mbbackangle_SOURCES) $(mbclean_SOURCES) $(mbcopy_SOURCES) \
+	$(mbctdlist_SOURCES) $(mbdatalist_SOURCES) \
+	$(mbdefaults_SOURCES) $(mbdumpesf_SOURCES) \
+	$(mbextractsegy_SOURCES) $(mbfilter_SOURCES) \
+	$(mbformat_SOURCES) $(mbgetesf_SOURCES) $(mbgrid_SOURCES) \
+	$(mbhistogram_SOURCES) $(mbhsdump_SOURCES) \
 	$(mbhysweeppreprocess_SOURCES) $(mbinfo_SOURCES) \
 	$(mbkongsbergpreprocess_SOURCES) $(mblevitus_SOURCES) \
 	$(mblist_SOURCES) $(mbmosaic_SOURCES) $(mbnavlist_SOURCES) \
@@ -325,13 +329,14 @@ SOURCES = $(mb7k2jstar_SOURCES) $(mb7k2ss_SOURCES) \
 	$(mbswplspreprocess_SOURCES) $(mbtime_SOURCES)
 DIST_SOURCES = $(mb7k2jstar_SOURCES) $(mb7k2ss_SOURCES) \
 	$(mb7kpreprocess_SOURCES) $(mbabsorption_SOURCES) \
-	$(mbareaclean_SOURCES) $(mbauvloglist_SOURCES) \
-	$(mbauvnavusbl_SOURCES) $(mbbackangle_SOURCES) \
-	$(mbclean_SOURCES) $(mbcopy_SOURCES) $(mbctdlist_SOURCES) \
-	$(mbdatalist_SOURCES) $(mbdefaults_SOURCES) \
-	$(mbdumpesf_SOURCES) $(mbextractsegy_SOURCES) \
-	$(mbfilter_SOURCES) $(mbformat_SOURCES) $(mbgetesf_SOURCES) \
-	$(mbgrid_SOURCES) $(mbhistogram_SOURCES) $(mbhsdump_SOURCES) \
+	$(mbampstats_SOURCES) $(mbareaclean_SOURCES) \
+	$(mbauvloglist_SOURCES) $(mbauvnavusbl_SOURCES) \
+	$(mbbackangle_SOURCES) $(mbclean_SOURCES) $(mbcopy_SOURCES) \
+	$(mbctdlist_SOURCES) $(mbdatalist_SOURCES) \
+	$(mbdefaults_SOURCES) $(mbdumpesf_SOURCES) \
+	$(mbextractsegy_SOURCES) $(mbfilter_SOURCES) \
+	$(mbformat_SOURCES) $(mbgetesf_SOURCES) $(mbgrid_SOURCES) \
+	$(mbhistogram_SOURCES) $(mbhsdump_SOURCES) \
 	$(mbhysweeppreprocess_SOURCES) $(mbinfo_SOURCES) \
 	$(mbkongsbergpreprocess_SOURCES) $(mblevitus_SOURCES) \
 	$(mblist_SOURCES) $(mbmosaic_SOURCES) $(mbnavlist_SOURCES) \
@@ -397,13 +402,13 @@ am__define_uniq_tagged_files = \
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /Users/dfinlayson/src/mbsystem/trunk.r2183/missing aclocal-1.13
+ACLOCAL = ${SHELL} /Users/dfinlayson/src/mbsystem/missing aclocal-1.13
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
-AUTOCONF = ${SHELL} /Users/dfinlayson/src/mbsystem/trunk.r2183/missing autoconf
-AUTOHEADER = ${SHELL} /Users/dfinlayson/src/mbsystem/trunk.r2183/missing autoheader
-AUTOMAKE = ${SHELL} /Users/dfinlayson/src/mbsystem/trunk.r2183/missing automake-1.13
+AUTOCONF = ${SHELL} /Users/dfinlayson/src/mbsystem/missing autoconf
+AUTOHEADER = ${SHELL} /Users/dfinlayson/src/mbsystem/missing autoheader
+AUTOMAKE = ${SHELL} /Users/dfinlayson/src/mbsystem/missing automake-1.13
 AWK = gawk
 CC = gcc
 CCAS = gcc
@@ -447,7 +452,7 @@ LIPO = lipo
 LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /Users/dfinlayson/src/mbsystem/trunk.r2183/missing makeinfo
+MAKEINFO = ${SHELL} /Users/dfinlayson/src/mbsystem/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /sw/bin/gmkdir -p
 NM = /usr/bin/nm
@@ -475,10 +480,10 @@ SHELL = /bin/sh
 STRIP = strip
 VERSION = 5.4.2183
 XDR_LIB = 
-abs_builddir = /Users/dfinlayson/src/mbsystem/trunk.r2183/src/utilities
-abs_srcdir = /Users/dfinlayson/src/mbsystem/trunk.r2183/src/utilities
-abs_top_builddir = /Users/dfinlayson/src/mbsystem/trunk.r2183
-abs_top_srcdir = /Users/dfinlayson/src/mbsystem/trunk.r2183
+abs_builddir = /Users/dfinlayson/src/mbsystem/src/utilities
+abs_srcdir = /Users/dfinlayson/src/mbsystem/src/utilities
+abs_top_builddir = /Users/dfinlayson/src/mbsystem
+abs_top_srcdir = /Users/dfinlayson/src/mbsystem
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -508,7 +513,7 @@ host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /Users/dfinlayson/src/mbsystem/trunk.r2183/install-sh
+install_sh = ${SHELL} /Users/dfinlayson/src/mbsystem/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 libfftw_CFLAGS = -I/sw/include  
@@ -538,7 +543,7 @@ motif_CPPFLAGS =
 motif_LIBS = -lXm -lXt -lX11
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/dfinlayson/src/mbsystem
+prefix = /Users/dfinlayson
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -614,6 +619,8 @@ mbkongsbergpreprocess_SOURCES = mbkongsbergpreprocess.c
 mbkongsbergpreprocess_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
 mbswplspreprocess_SOURCES = mbswplspreprocess.c
 mbswplspreprocess_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
+mbampstats_SOURCES = mbampstats.c
+mbampstats_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
 mbpreprocess_SOURCES = mbpreprocess.c
 mbpreprocess_LDADD = ${top_builddir}/src/mbaux/libmbaux.la
 mbsvpselect_SOURCES = mbsvpselect.c geodesic.c
@@ -725,6 +732,10 @@ mb7kpreprocess$(EXEEXT): $(mb7kpreprocess_OBJECTS) $(mb7kpreprocess_DEPENDENCIES
 mbabsorption$(EXEEXT): $(mbabsorption_OBJECTS) $(mbabsorption_DEPENDENCIES) $(EXTRA_mbabsorption_DEPENDENCIES) 
 	@rm -f mbabsorption$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(mbabsorption_OBJECTS) $(mbabsorption_LDADD) $(LIBS)
+
+mbampstats$(EXEEXT): $(mbampstats_OBJECTS) $(mbampstats_DEPENDENCIES) $(EXTRA_mbampstats_DEPENDENCIES) 
+	@rm -f mbampstats$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(mbampstats_OBJECTS) $(mbampstats_LDADD) $(LIBS)
 
 mbareaclean$(EXEEXT): $(mbareaclean_OBJECTS) $(mbareaclean_DEPENDENCIES) $(EXTRA_mbareaclean_DEPENDENCIES) 
 	@rm -f mbareaclean$(EXEEXT)
@@ -905,6 +916,7 @@ include ./$(DEPDIR)/mb7k2jstar.Po
 include ./$(DEPDIR)/mb7k2ss.Po
 include ./$(DEPDIR)/mb7kpreprocess.Po
 include ./$(DEPDIR)/mbabsorption.Po
+include ./$(DEPDIR)/mbampstats.Po
 include ./$(DEPDIR)/mbareaclean.Po
 include ./$(DEPDIR)/mbauvloglist.Po
 include ./$(DEPDIR)/mbauvnavusbl.Po

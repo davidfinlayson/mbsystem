@@ -1,1 +1,1 @@
-char *ifile = "/Users/dfinlayson/src/mbsystem/share/mbsystem/LevitusAnnual82.dat";
+char *ifile = "/Users/dfinlayson/share/mbsystem/LevitusAnnual82.dat";

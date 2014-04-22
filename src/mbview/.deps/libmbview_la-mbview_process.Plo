@@ -1,0 +1,313 @@
+libmbview_la-mbview_process.lo .libs/libmbview_la-mbview_process.o:  \
+ mbview_process.c /usr/include/stdio.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h /usr/include/string.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/ctype.h \
+  /usr/include/runetype.h /usr/include/math.h \
+  /usr/X11/include/X11/StringDefs.h /usr/X11/include/X11/cursorfont.h \
+  /sw/include/Xm/Xm.h /usr/X11/include/X11/Intrinsic.h \
+  /usr/X11/include/X11/Xlib.h /usr/include/sys/types.h \
+  /usr/X11/include/X11/X.h /usr/X11/include/X11/Xfuncproto.h \
+  /usr/X11/include/X11/Xosdefs.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  /usr/X11/include/X11/Xutil.h /usr/X11/include/X11/keysym.h \
+  /usr/X11/include/X11/keysymdef.h /usr/X11/include/X11/Xresource.h \
+  /usr/X11/include/X11/Core.h /usr/X11/include/X11/Composite.h \
+  /usr/X11/include/X11/Constraint.h /usr/X11/include/X11/Object.h \
+  /usr/X11/include/X11/RectObj.h /usr/X11/include/X11/Shell.h \
+  /usr/X11/include/X11/SM/SMlib.h /usr/X11/include/X11/SM/SM.h \
+  /usr/X11/include/X11/ICE/ICElib.h /usr/X11/include/X11/ICE/ICE.h \
+  /usr/X11/include/X11/Xatom.h /usr/X11/include/X11/extensions/Print.h \
+  /usr/X11/include/X11/Xauth.h /usr/X11/include/X11/Xfuncs.h \
+  /sw/include/Xm/XmStrDefs.h /sw/include/Xm/XmStrDefs22.h \
+  /sw/include/Xm/XmStrDefs23.h /sw/include/Xm/VirtKeys.h \
+  /sw/include/Xm/Transfer.h /sw/include/Xm/DragC.h \
+  /sw/include/Xm/Display.h /sw/include/Xm/DropSMgr.h \
+  /sw/include/Xm/Primitive.h /sw/include/Xm/Manager.h \
+  /sw/include/Xm/Gadget.h /sw/include/Xm/TxtPropCv.h \
+  /sw/include/Xm/VendorS.h /sw/include/Xm/XmIm.h /sw/include/Xm/MainW.h \
+  /sw/include/Xm/DialogS.h /sw/include/Xm/RepType.h \
+  /sw/include/Xm/MwmUtil.h /usr/X11/include/X11/Xmd.h \
+  /sw/include/Xm/BulletinB.h /sw/include/Xm/RowColumn.h \
+  /sw/include/Xm/CascadeB.h /sw/include/Xm/PushB.h \
+  /sw/include/Xm/Separator.h MB3DView.h MB3DSiteList.h MB3DRouteList.h \
+  MB3DNavList.h /usr/X11/include/GL/gl.h /usr/X11/include/GL/glext.h \
+  /usr/include/inttypes.h /usr/include/stdint.h /usr/X11/include/GL/glu.h \
+  /usr/X11/include/GL/glx.h /usr/X11/include/GL/glxext.h mb_glwdrawa.h \
+  ../../src/mbio/mb_status.h ../../src/mbio/mb_define.h \
+  ../../src/mbio/mb_config.h /usr/include/rpc/rpc.h \
+  /usr/include/rpc/types.h /usr/include/sys/time.h /usr/include/time.h \
+  /usr/include/_structs.h /usr/include/sys/_select.h \
+  /usr/include/netinet/in.h /usr/include/sys/socket.h \
+  /usr/include/machine/_param.h /usr/include/i386/_param.h \
+  /usr/include/netinet6/in6.h /usr/include/rpc/xdr.h \
+  /usr/include/rpc/auth.h /usr/include/rpc/clnt.h \
+  /usr/include/rpc/rpc_msg.h /usr/include/rpc/auth_unix.h \
+  /usr/include/rpc/svc.h /usr/include/rpc/svc_auth.h /usr/include/netdb.h \
+  mbview.h mbviewprivate.h
+
+/usr/include/stdio.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/sys/_symbol_aliasing.h:
+
+/usr/include/sys/_posix_availability.h:
+
+/usr/include/Availability.h:
+
+/usr/include/AvailabilityInternal.h:
+
+/usr/include/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/secure/_stdio.h:
+
+/usr/include/secure/_common.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/sys/appleapiopts.h:
+
+/usr/include/machine/signal.h:
+
+/usr/include/i386/signal.h:
+
+/usr/include/i386/_structs.h:
+
+/usr/include/sys/_structs.h:
+
+/usr/include/machine/_structs.h:
+
+/usr/include/mach/i386/_structs.h:
+
+/usr/include/sys/resource.h:
+
+/usr/include/machine/endian.h:
+
+/usr/include/i386/endian.h:
+
+/usr/include/sys/_endian.h:
+
+/usr/include/libkern/_OSByteOrder.h:
+
+/usr/include/libkern/i386/_OSByteOrder.h:
+
+/usr/include/alloca.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/i386/types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/string.h:
+
+/usr/include/strings.h:
+
+/usr/include/secure/_string.h:
+
+/usr/include/ctype.h:
+
+/usr/include/runetype.h:
+
+/usr/include/math.h:
+
+/usr/X11/include/X11/StringDefs.h:
+
+/usr/X11/include/X11/cursorfont.h:
+
+/sw/include/Xm/Xm.h:
+
+/usr/X11/include/X11/Intrinsic.h:
+
+/usr/X11/include/X11/Xlib.h:
+
+/usr/include/sys/types.h:
+
+/usr/X11/include/X11/X.h:
+
+/usr/X11/include/X11/Xfuncproto.h:
+
+/usr/X11/include/X11/Xosdefs.h:
+
+/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h:
+
+/usr/X11/include/X11/Xutil.h:
+
+/usr/X11/include/X11/keysym.h:
+
+/usr/X11/include/X11/keysymdef.h:
+
+/usr/X11/include/X11/Xresource.h:
+
+/usr/X11/include/X11/Core.h:
+
+/usr/X11/include/X11/Composite.h:
+
+/usr/X11/include/X11/Constraint.h:
+
+/usr/X11/include/X11/Object.h:
+
+/usr/X11/include/X11/RectObj.h:
+
+/usr/X11/include/X11/Shell.h:
+
+/usr/X11/include/X11/SM/SMlib.h:
+
+/usr/X11/include/X11/SM/SM.h:
+
+/usr/X11/include/X11/ICE/ICElib.h:
+
+/usr/X11/include/X11/ICE/ICE.h:
+
+/usr/X11/include/X11/Xatom.h:
+
+/usr/X11/include/X11/extensions/Print.h:
+
+/usr/X11/include/X11/Xauth.h:
+
+/usr/X11/include/X11/Xfuncs.h:
+
+/sw/include/Xm/XmStrDefs.h:
+
+/sw/include/Xm/XmStrDefs22.h:
+
+/sw/include/Xm/XmStrDefs23.h:
+
+/sw/include/Xm/VirtKeys.h:
+
+/sw/include/Xm/Transfer.h:
+
+/sw/include/Xm/DragC.h:
+
+/sw/include/Xm/Display.h:
+
+/sw/include/Xm/DropSMgr.h:
+
+/sw/include/Xm/Primitive.h:
+
+/sw/include/Xm/Manager.h:
+
+/sw/include/Xm/Gadget.h:
+
+/sw/include/Xm/TxtPropCv.h:
+
+/sw/include/Xm/VendorS.h:
+
+/sw/include/Xm/XmIm.h:
+
+/sw/include/Xm/MainW.h:
+
+/sw/include/Xm/DialogS.h:
+
+/sw/include/Xm/RepType.h:
+
+/sw/include/Xm/MwmUtil.h:
+
+/usr/X11/include/X11/Xmd.h:
+
+/sw/include/Xm/BulletinB.h:
+
+/sw/include/Xm/RowColumn.h:
+
+/sw/include/Xm/CascadeB.h:
+
+/sw/include/Xm/PushB.h:
+
+/sw/include/Xm/Separator.h:
+
+MB3DView.h:
+
+MB3DSiteList.h:
+
+MB3DRouteList.h:
+
+MB3DNavList.h:
+
+/usr/X11/include/GL/gl.h:
+
+/usr/X11/include/GL/glext.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/stdint.h:
+
+/usr/X11/include/GL/glu.h:
+
+/usr/X11/include/GL/glx.h:
+
+/usr/X11/include/GL/glxext.h:
+
+mb_glwdrawa.h:
+
+../../src/mbio/mb_status.h:
+
+../../src/mbio/mb_define.h:
+
+../../src/mbio/mb_config.h:
+
+/usr/include/rpc/rpc.h:
+
+/usr/include/rpc/types.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/time.h:
+
+/usr/include/_structs.h:
+
+/usr/include/sys/_select.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/machine/_param.h:
+
+/usr/include/i386/_param.h:
+
+/usr/include/netinet6/in6.h:
+
+/usr/include/rpc/xdr.h:
+
+/usr/include/rpc/auth.h:
+
+/usr/include/rpc/clnt.h:
+
+/usr/include/rpc/rpc_msg.h:
+
+/usr/include/rpc/auth_unix.h:
+
+/usr/include/rpc/svc.h:
+
+/usr/include/rpc/svc_auth.h:
+
+/usr/include/netdb.h:
+
+mbview.h:
+
+mbviewprivate.h:
